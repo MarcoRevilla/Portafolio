@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- section inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/MR/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">CONOCIMIENTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes">
+                        <a href="https://www.facebook.com/rodrigo.revilla.54?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=%2B51+968160683&text=Hola+%F0%9F%98%80"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://msng.link/o/?Rodriigo_Reviilla=ig"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Bienvenidos</p>
+                    <h2>Soy <span>Marco Revilla</span>, Developer</h2>
+                    <p class="descripcion">Desarrollo de sistemas de información</p>
+                    <a href="#servicios">Ir a mis servicios</a>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- seccion sobre mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/4136918.jpg" alt="Cargondo imagen">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Marco Revilla</span></h2>
+            <h3>Developer</h3>
+            <p>Soy egresado de la carrera técnica de Desarrollo de sistemas de información, me encantaria formar parte de una empresa para aplicar mis conocimientos. Gracias a mi formación educativa, considero que puedo aportar valor y asi mismo desarrollarme profesionalmente.
+            </p>
+            <a href="">Descargar CV</a>
+        </div>
+    </section><br/>
+
+    <!-- seccion servicios-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <p>Elaborar mockup para el diseño de las paginas web.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Maquetación web</h4>
+                <hr>
+                <p>Maquetar las intercafes de la pagina web.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programación en Javacript</h4>
+                <hr>
+                <p>Desarrollar validaciones, funciones y eventos.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programación en Java</h4>
+                <hr>
+                <p>Desarrollo de aplicaciones de escritorio, web, microservicios, api restful.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programación en C#</h4>
+                <hr>
+                <p>Desarrollo de aplicaciones de escritorio, web, microservicios, api restful.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Programación en Base de Datos</h4>
+                <hr>
+                <p>Creación de la base de datos, relación de entidades,procedimientos almacenados y añadiendo datos.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- seccion conocimientos-->
+    <div class="contenedor-skills" id="skills">
+        <h3>Conocimientos</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html</p>
+                <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Css</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="css" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javacript</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>c#</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="c#" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de datos</p>
+                <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--servicio contactenos-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad" required>
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" required>
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- pie de pagina-->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <div class="redes">
+            <a href="https://api.whatsapp.com/send?phone=%2B51+968160683&text=Hola+%F0%9F%98%80"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/rodrigo.revilla.54?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://msng.link/o/?Rodriigo_Reviilla=ig"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
